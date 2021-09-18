@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Informações que passam ao navegador -->
+    <meta charset="UTF-8">
+    <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
+    <title>Bumba Meu Maranhão</title>
+
+    <link rel="stylesheet" href="reset.css"> <!-- arquivo que corrige todos os erros do navegador -->
+    <link rel="stylesheet" href="css/style.css"> <!-- estilo de todo o site -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!-- fonte -->
+
+</head>
+
+<body>
+    <!-- Informações que serão exibidas -->
+
+    <body>
+
+        <!-- CABEÇALHO -->
+        <header class="header">
+
+            <a href="#" class="logo">
+                <img src="imagens/logo.png" alt="">
+            </a>
+
+
+            <!-- navegação no cabeçalho -->
+            <nav class="navegacao">
+                <a href="index.html">Home</a>
+                <a href="index.html">Sobre</a>
+                <a href="index.html">Pontos Turísticos</a>
+                <a href="index.html">Pratos Típicos</a>
+                <a href="index.html">Festas Populares</a>
+                <a href="index.html">Artes Maranhenses</a>
+                <a href="index.html">Patrimônio Histórico</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+
+        </header>
+
+
+        <main>
+
+            <img src="https://super.abril.com.br/wp-content/uploads/2019/09/si_pretomit.png?w=680&h=453&crop=1" alt="">
+            <section class="contato" id="contato">
+                <div class="row">
+                    
+                       <!-- Google Maps do Maranhão -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830681.4252305976!2d-46.409377252500576!3d-5.279026381793396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68ff06f7f6d21%3A0x983102e459a3de47!2zU8OjbyBMdcOtcyAtIFZpbGEgTWFyYW5ow6NvLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1631957159852!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <form action="">
+                        <h3>Contate-Nos</h3>
+
+                        <!-- 1º caixinha para digitar o nome do usuário -->
+                        <div class="inputBox">
+                            <span class="usuario"></span>
+                            <input type="text" placeholder="Qual o seu Nome?">
+                        </div>
+
+                        <!-- 2º caixinha para digitar o email -->
+                        <div class="inputBox">
+                            <span class="email"></span>
+                            <input type="email" placeholder="Digite o seu email.">
+                        </div>
+                        <!-- 3º caixinha para digitar o contato -->
+                        <div class="inputBox">
+                            <span class="telefone"></span>
+                            <input type="number" placeholder="Digite o seu número para contato.">
+                        </div>
+                        <input type="submit" value="ENVIAR" class="sm">         
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <script src="js/index.js"></script>
+    </body>
+
+</html>
