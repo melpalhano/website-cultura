@@ -6,6 +6,7 @@ Site sobre a cultura maranhense desenvolvido para o Programa Trilhas da SECTI-MA
 	
 * Pontos Turísticos;
 
+
 * Pratos Típicos;
 
 * Festas Populares;
