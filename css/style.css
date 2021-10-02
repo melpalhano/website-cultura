@@ -1,10 +1,13 @@
-/*Renderizando a fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 :root {
-    --main-color: #41D7FF;
+    --main-color: rgb(224, 209, 143);
     --black: #030303;
     --bg: #030303;
     --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+.imagem {
+    opacity: 0.9;
 }
 
 * {
@@ -40,34 +43,35 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: var(--bg);
+    background: #051A33;
 }
 
 section {
-    padding: 2rem 7%;
+    padding: 4rem 7%;
 }
 
 .titulo {
     text-align: center;
-    color: #fff;
+    color: rgb(51, 49, 49);
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
 
 .titulo span {
-    color: var(--main-color);
+    color: #F8F8DD;
     text-transform: uppercase;
 }
 
 /* # */
+
 .sm {
     margin-top: 1rem;
     display: inline-block;
     padding: .9rem 3rem;
-    font-size: 1.7rem;
-    color: #254A54;
-    background: var(--main-color);
+    font-size: 1.9rem;
+    color: #000000;
+    background: #FFAB49;
     cursor: pointer;
 }
 
@@ -76,7 +80,7 @@ section {
 }
 
 .header {
-    background: var(--bg);
+    background: #000B19;
     display: flex;
     align-items: center;
     padding: 1.5rem 7%;
@@ -93,8 +97,8 @@ section {
 }
 
 .header .navegacao a {
-    margin: 0 1rem;
-    font-size: 1.6rem;
+    margin: 0 2rem;
+    font-size: 1.9rem;
     color: #fff;
 }
 
@@ -112,7 +116,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../img/banner.png) no-repeat;
+    background: url(../img/banner.svg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -122,7 +126,7 @@ section {
 }
 
 .home .conteudo h3 {
-    font-size: 6rem;
+    font-size: 8.5rem;
     text-transform: uppercase;
     color: #fff;
 }
@@ -135,11 +139,16 @@ section {
     color: #eee;
 }
 
+.sobre {
+    padding: 15rem;
+}
+
 .sobre .row {
     display: flex;
     align-items: center;
-    background: var(--black);
+    background: #000B19;
     flex-wrap: wrap;
+    border: var(--border);
 }
 
 .sobre .row .imagem {
@@ -161,16 +170,17 @@ section {
 }
 
 .sobre .row .conteudo p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: #ccc;
     padding: 1rem 0;
     line-height: 1.8;
 }
 
+/*CAIXINHAS*/
 
-/*FORMATAÇÃO DAS CAIXINHAS*/
-/*OBS.: O padding que é o elemento que aumenta o tamanho delas, pois, quando declarado que existe um espaçamento interno, o conteúdo é aumentado
-fazendo aquele efeito de zoom*/
+.box {
+    border: var(--border);
+}
 
 /*PONTOS TURISTICOS*/
 
@@ -202,6 +212,8 @@ fazendo aquele efeito de zoom*/
 
 .pontos-turisticos .caixinhas .box .conteudo {
     padding: 2rem;
+    background: #000B19;
+    ;
 }
 
 .pontos-turisticos .caixinhas .box .conteudo .title {
@@ -222,7 +234,7 @@ fazendo aquele efeito de zoom*/
 }
 
 .pontos-turisticos .caixinhas .box .conteudo p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.8;
     color: #ccc;
     padding: 1rem 0;
@@ -258,6 +270,7 @@ fazendo aquele efeito de zoom*/
 
 .pratos-tipicos .caixinhas .box .conteudo {
     padding: 2rem;
+    background: #000B19;
 }
 
 .pratos-tipicos .caixinhas .box .conteudo .title {
@@ -278,7 +291,7 @@ fazendo aquele efeito de zoom*/
 }
 
 .pratos-tipicos .caixinhas .box .conteudo p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.8;
     color: #ccc;
     padding: 1rem 0;
@@ -314,6 +327,7 @@ fazendo aquele efeito de zoom*/
 
 .festas-populares .caixinhas .box .conteudo {
     padding: 2rem;
+    background: #000B19;
 }
 
 .festas-populares .caixinhas .box .conteudo .title {
@@ -334,12 +348,11 @@ fazendo aquele efeito de zoom*/
 }
 
 .festas-populares .caixinhas .box .conteudo p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.8;
     color: #ccc;
     padding: 1rem 0;
 }
-
 
 /*ARTE MARANHNESE*/
 
@@ -371,6 +384,7 @@ fazendo aquele efeito de zoom*/
 
 .artes-maranhenses .caixinhas .box .conteudo {
     padding: 2rem;
+    background: #000B19;
 }
 
 .artes-maranhenses .caixinhas .box .conteudo .title {
@@ -391,7 +405,7 @@ fazendo aquele efeito de zoom*/
 }
 
 .artes-maranhenses .caixinhas .box .conteudo p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.8;
     color: #ccc;
     padding: 1rem 0;
@@ -427,6 +441,7 @@ fazendo aquele efeito de zoom*/
 
 .patrimonio-historico .caixinhas .box .conteudo {
     padding: 2rem;
+    background: #000B19;
 }
 
 .patrimonio-historico .caixinhas .box .conteudo .title {
@@ -447,7 +462,7 @@ fazendo aquele efeito de zoom*/
 }
 
 .patrimonio-historico .caixinhas .box .conteudo p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.8;
     color: #ccc;
     padding: 1rem 0;
@@ -465,7 +480,6 @@ fazendo aquele efeito de zoom*/
     }
 }
 
-/* O elemento que tem o seu display com o valor inline-block pode ser ajustado tanto na largura quanto na altura*/
 @media (max-width:768px) {
     #menu-sm {
         display: inline-block;
@@ -510,6 +524,111 @@ fazendo aquele efeito de zoom*/
     }
 }
 
+/* Destaque */
+
+.destaque {
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+    padding: 3rem;
+}
+
+.listaDeDestaque-blog {
+    text-align: left;
+    padding-bottom: 2em;
+    max-width: 815px;
+    display: inline-block;
+    white-space: normal;
+}
+
+.listaDeDestaque {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.listaDeDestaque-item {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: none;
+}
+
+.listaDeDestaque-item:not(:target):first-child {
+    display: inline-block;
+}
+
+.listaDeDestaque-item:target {
+    display: inline-block;
+}
+
+.listaDeDestaque-blog-img {
+    width: 100%;
+    display: block;
+}
+
+.listaDeDestaque-item:nth-of-type(2) img {
+    filter: sepia(.7)
+}
+
+.listaDeDestaque-item:nth-of-type(3) img {
+    filter: hue-rotate(10deg) saturate(1)
+}
+
+.listaDeDestaque-blog-titulo {
+    font-family: 'Montserrat', sans-serif;
+    margin: .7em 0;
+    font-size: 1.2em;
+}
+
+.listaDeDestaque-blog-link {
+    color: #EB5757;
+    font-weight: bold;
+}
+
+.listaDeDestaque-slider {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.listaDeDestaque-slider li {
+    display: inline-block;
+}
+
+.listaDeDestaque-slider-item {
+    text-indent: -9999px;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 .5em;
+    border: 0;
+}
+
+.listaDeDestaque-slider-item:hover, .listaDeDestaque-slider-item:focus {
+    background-color: #a5a5a5;
+    outline: 0;
+}
+
+.listaDeDestaque-slider-item--ativo {
+    background: hsla(200, 70%, 0%, .6);
+}
+
+/* RODAPÉ */
+
+.footer {
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .copyright {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 3.5rem;
+}
 
 /*CONTATO.HTML*/
 
@@ -556,7 +675,7 @@ fazendo aquele efeito de zoom*/
 .contato .row form .inputBox input {
     width: 100%;
     padding: 2rem;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: #fff;
     text-transform: none;
     background: none;

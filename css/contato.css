@@ -1,0 +1,222 @@
+.secaoContato {
+  background-color: #F7F4F4;
+  text-align: center;
+  text-align: left;
+}
+
+.secaoContato-wink {
+  color: #EB5757;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.secaoContato-form-fieldset {
+  border: 0;
+}
+
+.secaoContato-form-legend {
+  max-width: 300px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.secaoContato-form-cta {
+  width: 100%;
+  margin-top: 1em;
+  display: block;
+  background: transparent;
+  color: #B72E2E;
+  border: 1px solid #B72E2E;
+}
+
+.secaoContato-form-cta:hover, .secaoContato-form-cta:focus {
+  color: #fff;
+  background-color: #B72E2E;
+}
+
+.contatoCampo-checkbox:checked+.contatoCampo-label:before {
+  content: 'x';
+  color: #fff;
+  background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+}
+
+.contatoCampo-checkbox {
+  /*  display: none;*/
+  /*  visibility: hidden*/
+  left: -9999px;
+  position: absolute;
+  opacity: 0;
+}
+
+.rodape .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  padding: 3.5em 5%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+@media (min-width: 830px) {
+  .container {
+    width: 1200px;
+    width: 800px;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 3.5em 2em;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1065px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.tituloPadrao {
+  font-family: 'Montserrat', serif;
+  margin-bottom: 1em;
+  color: #4F4C4C;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+contatoCampo label, .contatoCampo input:not([type='checkbox']), .contatoCampo textarea {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.contatoCampo .contatoCampo--validouFoi {
+  border: 2px solid #219653;
+  background-color: #fff;
+  position: relative;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.contatoCampo {
+  margin: .8em auto;
+  max-width: 600px;
+  position: relative;
+}
+
+div {
+  display: block;
+}
+
+.contatoCampo label, .contatoCampo input:not([type='checkbox']), .contatoCampo textarea {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  cursor: default;
+}
+
+.contatoCampo input, .contatoCampo textarea {
+  font-size: 1em;
+  padding: .5em;
+  min-height: 50px;
+  border-radius: 8px;
+  outline: 0;
+}
+
+.contatoCampo--erro:before {
+  content: '';
+  display: inline-block;
+  width: 33px;
+  height: 32px;
+  position: absolute;
+  z-index: 1;
+  right: .4em;
+  transform: translateY(112%) scale(.65);
+  background-image: url(../img/validacao-erro.png);
+}
+
+.contatoCampo label {
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+
+.contatoCampo .contatoCampo--validouErro {
+  border: 2px solid #FF0000;
+  background-color: #fff;
+  position: relative;
+}
+
+.contatoCampo input, .contatoCampo textarea {
+  font-size: 1em;
+  padding: .5em;
+  min-height: 50px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: 0;
+}
+
+.contatoCampo-campoDesabilitado {
+  background-color: #ddd;
+}
+
+.btnPadrao {
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: .3em 1em;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  outline: 0;
+  text-decoration: none;
+}
+
+.contatoCampo-msg, .formContato-validacao {
+  margin-left: 4px;
+  margin-top: 4px;
+  font-size: .9em;
+  font-weight: bold;
+  color: #FD1242;
+  display: inline-block;
+}
+
+.contatoCampo-checkbox:checked+.contatoCampo-label:before {
+  content: 'x';
+  color: #fff;
+  background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+}
+
+.contatoCampo-label:before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #fff;
+  transform: translate(-7px, -3px);
+  border: 1px solid #7D7D7D;
+  color: transparent;
+  line-height: 1;
+  transition: .2s ease-in;
+}
+
+section {
+  padding: 15rem 7%;
+}
