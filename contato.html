@@ -2,86 +2,116 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Informações que passam ao navegador -->
-    <meta charset="UTF-8">
-    <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
-    <title>Bumba Meu Maranhão</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
 
-    <link rel="stylesheet" href="reset.css"> <!-- arquivo que corrige todos os erros do navegador -->
-    <link rel="stylesheet" href="css/style.css"> <!-- estilo de todo o site -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!-- fonte -->
-
-</head>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 <body>
-    <!-- Informações que serão exibidas -->
 
-    <body>
+  <header class="header">
 
-        <!-- CABEÇALHO -->
-        <header class="header">
+    <a href="#" class="logo">
+      <img src="img/Bumba.svg" alt="">
+    </a>
 
-            <a href="#" class="logo">
-                <img src="imagens/logo.png" alt="">
-            </a>
+    <nav class="navegacao">
+      <a href="index.html">Home</a>
+      <a href="index.html">Sobre</a>
+      <a href="index.html">Pontos Turísticos</a>
+      <a href="index.html">Pratos Típicos</a>
+      <a href="index.html">Festas Populares</a>
+      <a href="index.html">Artes Maranhenses</a>
+      <a href="index.html">Patrimônio Histórico</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
+  <section class="secaoContato">
+    <div class="container">
+      <h2 class="tituloPadrao">
+        CONTATE-NOS
+      </h2>
 
-            <!-- navegação no cabeçalho -->
-            <nav class="navegacao">
-                <a href="index.html">Home</a>
-                <a href="index.html">Sobre</a>
-                <a href="index.html">Pontos Turísticos</a>
-                <a href="index.html">Pratos Típicos</a>
-                <a href="index.html">Festas Populares</a>
-                <a href="index.html">Artes Maranhenses</a>
-                <a href="index.html">Patrimônio Histórico</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+      <form class="secaoContato-form">
 
+        <p class="secaoContato-form-legend">
+          Preencha seus dados e sua mensagem:
+        </p>
 
-        </header>
+        <div class="contatoCampo contatoCampo--sucesso">
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required>
+        </div>
 
+        <div class="contatoCampo contatoCampo--erro">
+          <label for="email">Email: </label>
+          <input type="email" id="email" class="contatoCampo--validouErro" placeholder="Email.." required>
+          <span class="contatoCampo-msg contatoCampo-msg--erro">
+            Você quis dizer <a href="#">gmail.com?</a>
+          </span>
+        </div>
 
-        <main>
+        <div class="contatoCampo contatoCampo--erro">
+          <label>Telefone: </label>
+          <input type="text" class="contatoCampo--validouErro" placeholder="(98) 9215-2751">
+          <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
+        </div>
 
-            <img src="https://super.abril.com.br/wp-content/uploads/2019/09/si_pretomit.png?w=680&h=453&crop=1" alt="">
-            <section class="contato" id="contato">
-                <div class="row">
-                    
-                       <!-- Google Maps do Maranhão -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830681.4252305976!2d-46.409377252500576!3d-5.279026381793396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68ff06f7f6d21%3A0x983102e459a3de47!2zU8OjbyBMdcOtcyAtIFZpbGEgTWFyYW5ow6NvLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1631957159852!5m2!1spt-BR!2sbr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <form action="">
-                        <h3>Contate-Nos</h3>
+        <div class="contatoCampo">
+          <label>CEP: </label>
+          <input type="text" maxlength="8" placeholder="Exemplo: 65306-364" required>
+        </div>
 
-                        <!-- 1º caixinha para digitar o nome do usuário -->
-                        <div class="inputBox">
-                            <span class="usuario"></span>
-                            <input type="text" placeholder="Qual o seu Nome?">
-                        </div>
+        <div class="contatoCampo">
+          <label>Endereço: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua 4">
+        </div>
 
-                        <!-- 2º caixinha para digitar o email -->
-                        <div class="inputBox">
-                            <span class="email"></span>
-                            <input type="email" placeholder="Digite o seu email.">
-                        </div>
-                        <!-- 3º caixinha para digitar o contato -->
-                        <div class="inputBox">
-                            <span class="telefone"></span>
-                            <input type="number" placeholder="Digite o seu número para contato.">
-                        </div>
-                        <input type="submit" value="ENVIAR" class="sm">         
+        <div class="contatoCampo">
+          <label>Bairro: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Kalil">
+        </div>
 
-                    </form>
+        <div class="contatoCampo">
+          <label>Cidade: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Luís">
+        </div>
 
-                </div>
+        <div class="contatoCampo">
+          <label>Estado: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="MA">
+        </div>
 
-            </section>
+        <div class="contatoCampo">
+          <label>Mensagem: </label>
+          <textarea name="" cols="30" rows="10" required></textarea>
+        </div>
 
-        </main>
+        <div class="contatoCampo">
+          <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+          <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
+        </div>
 
-        <script src="js/index.js"></script>
-    </body>
+        <div class="contatoCampo">
+          <button class="secaoContato-form-cta btnPadrao" type="submit">
+            Enviar mensagem
+          </button>
+          <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">
+            Verifique os erros acima
+          </span>
+        </div>
 
-</html>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <section class="footer">
+      <p class="copyright">&copy; Copyright Bumba Meu Maranhão - 2021</p>
+    </section>
+  </footer>
+</body>
