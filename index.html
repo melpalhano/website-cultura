@@ -1,417 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/Bumba.svg" type="image/x-icon">
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Bumba Meu Maranhão</title>
+</head>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="img/Bumba.svg" alt="">
-        </a>
-        <nav class="navegacao">
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#pontos-turisticos">Pontos Turísticos</a>
-            <a href="#pratos-tipicos">Pratos Típicos</a>
-            <a href="#festas-populares">Festas Populares</a>
-            <a href="#artes-maranhenses">Artes Maranhenses</a>
-            <a href="#patrimonio-historico">Patrimônio Histórico</a>
-            <a href="contato.html">Contato</a>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo1.svg" alt="" class="nav__logo-img">
+                <img src="assets/img/logo2.svg" alt="" class="nav__logo-white">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#galeria" class="nav__link">Galeria</a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#contato" class="nav__link">Contato</a>
+                    </li> -->
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img/bandeira.svg" alt="" class="nav__img">
+            </div>
+            <div class="nav__btns">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+
         </nav>
     </header>
-    <section class="home" id="home">
-        <div class="conteudo">
-            <h3>Bumba Meu Maranhão</h3>
-            <p>Contribuindo para a divulgação da cultura maranhense</p>
-        </div>
-    </section>
-    <!-- SOBRE -->
-    <section class="sobre" id="sobre">
-        <div class="row">
-            <div class="imagem">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/1200px-Bandeira_do_Maranh%C3%A3o.svg.png"
-                    alt="">
-            </div>
-            <div class="conteudo">
-                <h3>Maranhão</h3>
-                <p>É um estado brasileiro integrante da região
-                    Nordeste que apresenta mais de 7 milhões
-                    de habitantes distribuídos em uma superfície de 330 mil km².
-                    Beleza, tradição, diversidade e magia, são palavras que
-                    traduzem um pouco a cultura maranhense.</p>
-                <a href="#" class="sm">Saiba Mais</a>
-            </div>
-        </div>
-    </section>
-    <!-- PONTOS TURÍSTICOS -->
-    <section class="pontos-turisticos" id="pontos-turisticos">
 
-        <h1 class="titulo"> <span>Pontos Turísticos</span> </h1>
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="assets/img/Bumba.svg" alt="" class="home__img">
 
-        <div class="caixinhas">
-
-            <!--1º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://oimparcial.com.br/app/uploads/2018/07/len%C3%A7ois.jpg" alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Lençóis Maranhenses</a>
-                    <span>Ponto Turístico | 18 de Setembro 2021 </span>
-                    <p>O Parque Nacional dos Lençóis Maranhenses, localizado no litoral oriental do estado do
-                        Maranhão, conhecido pelas sua vasta
-                        paisagem desértica.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!--2º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://s04.video.glbimg.com/x720/8110455.jpg" alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Delta do Parnaiba</a>
-                    <span>Ponto Turístico | 18 de Setembro 2021 </span>
-                    <p>O Delta do Rio Parnaíba está situado entre os estados brasileiros do Maranhão e
-                        Piauí, que garantem um cenário paradisíaco para os turistas.</p>
-
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!--3º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://static.wixstatic.com/media/3d52e5_ee7f9286db564814b86ccca360c6e924~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01/3d52e5_ee7f9286db564814b86ccca360c6e924~mv2.jpg"
-                        alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Parque Parcel de Manuel Luís</a>
-                    <span>Ponto Turístico | 18 de Setembro 2021 </span>
-                    <p>O Parque Parcel de Manuel Luís é uma unidade de conservação localizada no Oceano Atlântico,e
-                        é uma alternativa para aqueles que gostam de se aventurar.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-    </section>
-    <!-- PRATOS TÍPICOS-->
-    <section class="pratos-tipicos" id="pratos-tipicos">
-
-        <h1 class="titulo"> <span>Pratos Típicos</span> </h1>
-
-        <div class="caixinhas">
-
-            <div class="caixinhas">
-
-                <!--1º caixinha -->
-                <div class="box">
-                    <div class="imagem">
-                        <img src="https://img.itdg.com.br/tdg/images/recipes/000/009/547/352591/352591_original.jpg?mode=crop&width=710&height=400"
-                            alt="">
-                    </div>
-                    <div class="conteudo">
-                        <a href="#" class="title">Arroz de Cuxá</a>
-                        <span>Pratos Típicos | 18 de Setembro 2021</span>
-                        <p>O arroz de cuxá - "cuxá" vem das palavras tupis "ku" e "xai" - faz parte da memória
-                            do Maranhão e traduz no seu sabor as influências indígenas.</p>
-                        <a href="#" class="sm">Saiba Mais</a>
-                    </div>
-                </div>
-
-                <!--2º caixinha -->
-                <div class="box">
-                    <div class="imagem">
-                        <img src="https://www.essemundoenosso.com.br/wp-content/uploads/2017/07/culinaria-maranhense-4-carne-de-sol-740x493.jpg.webp"
-                            alt="">
-                    </div>
-                    <div class="conteudo">
-                        <a href="#" class="title">Peixada Maranhense</a>
-                        <span>Pratos Típicos | 18 de Setembro 2021</span>
-                        <p>A peixada maranhense é um cozido bem temperado de peixe que representa uma das principais
-                            identidades do Estado do Maranhão.
-                        </p>
-                        <a href="#" class="sm">Saiba Mais</a>
-                    </div>
-                </div>
-
-                <!--3º caixinha -->
-                <div class="box">
-                    <div class="imagem">
-                        <img src="https://i0.wp.com/incamilho.com.br/wp-content/uploads/2019/12/cuscuz.jpg?fit=620%2C465&ssl=1"
-                            alt="">ou
-                    </div>
-                    <div class="conteudo">
-                        <a href="#" class="title">Cuscuz do Maranhão</a>
-                        <span>Pratos Típicos | 18 de Setembro 2021</span>
-                        <p>O cuscuz do Maranhão apresenta uma versão sofisticada com coco, e também,
-                            faz parte da culinária nordestina de forma geral.
-                        </p>
-                        <a href="#" class="sm">Saiba Mais</a>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-
-    <!-- FESTAS POPULARES -->
-    <section class="festas-populares" id="festas-populares">
-
-        <h1 class="titulo"> <span>Festas Populares</span> </h1>
-
-        <div class="caixinhas">
-
-            <!--1º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/06/bumba-meu-boi.jpg" alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Bumba-Meu-Boi</a>
-                    <span>Festas Populares | 18 de Setembro 2021</span>
-                    <p>O Bumba-Meu-Boi é uma festa do folclore popular brasileiro, com personagens humanos e animais
-                        fantásticos, que gira em torno de uma lenda sobre a morte e ressurreição de um boi.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!--2º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://www.ma.gov.br/agenciadenoticias/wp-content/uploads/2019/09/18845_18845_img_20190913_wa0015_6043985570532280720_2237206659903100558.jpg"
-                        alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Tambor de Crioula</a>
-                    <span>Festas Populares | 18 de Setembro 2021</span>
-                    <p>O Tambor de crioula é uma dança de origem africana praticada por descendentes de escravos
-                        africanos no estado brasileiro do Maranhão, em louvor a
-                        São Benedito.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!--3º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="http://2.bp.blogspot.com/-dNih_LDVpeA/Timnj6dMQCI/AAAAAAAAAmE/ZS8l4BbL1ak/s1600/ok+FESTA+DO+DIVINO.jpg"
-                        alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Festa do Divino</a>
-                    <span>Festas Populares | 18 de Setembro 2021</span>
-                    <p>Festa do Divino Espírito Santo é uma manifestação que foi difundida pelo catolicismo popular,
-                        marcada por uma romaria
-                        , e antes do Covid-19, era bastante praticada no Maranhão.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Bloco das "Artes Maranhenses"-->
-    <section class="artes-maranhenses" id="artes-maranhenses">
-
-        <h1 class="titulo"><span>Artes Maranhenses</span> </h1>
-
-        <div class="caixinhas">
-
-            <!--1º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://imirante.com/imagens/2013/06/30/tracosmaint300613.jpg" alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Arte plástica</a>
-                    <span>Artes Maranhenses | 18 de Setembro 2021</span>
-                    <p>As artes plásticas são formas de expressão criadas pelo ser humano por meio do manuseio
-                        de diversos tipos de materiais.
+                <div class="home__data">
+                    <h1 class="home__title">Bumba Meu Maranhão</h1>
+                    <p class="home__description">
+                        Contribuindo para a divulgação da cultura maranhense
                     </p>
-                    <a href="#" class="sm">Saiba Mais</a>
+                    <a href="#bumba" class="button">Começar</a>
                 </div>
             </div>
-
-            <!--2º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="http://www.turismo.ma.gov.br/files/2019/04/Artesanato-de-Bilro-do-munic%C3%ADpio-da-Raposa-1.jpeg"
-                        alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Artesanato</a>
-                    <span>Artes Maranhenses | 18 de Setembro 2021</span>
-                    <p>O Artesanato do Maranhão é um trabalho manual que manifesta-se desde a palha de buriti até as
-                        brilhantes telas Péricles Rocha.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!--3º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://nedilsonmachado.com.br/wp-content/uploads/2020/10/IMG-20201024-WA0095.jpg" alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Grafite</a>
-                    <span>Grafite Maranhenses | 18 de Setembro 2021</span>
-                    <p>O grafite é uma arte urbana que encontra-se presente no Maranhão, sobretudo em São Luís. Um
-                        exemplo disso é a arte do Beco do Silva.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Bloco do "Patrimônio Histórico"-->
-    <section class="patrimonio-historico" id="patrimonio-historico">
-
-        <h1 class="titulo"> <span>Patrimônio Histórico</span> </h1>
-
-        <div class="caixinhas">
-
-            <!--1º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://live.staticflickr.com/3895/14787069921_a449bbbf6c_b.jpg" alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Centro Histórico de São Luís </a>
-                    <span>Patrimônio Histórico | 18 de Setembro 2021</span>
-                    <p>O centro histórico de São Luís, localizado na ilha de São Luís do Maranhão, na baía de São
-                        Marcos, é um exemplo excepcional de cidade colonial portuguesa.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!--2º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://1.bp.blogspot.com/-ZEc322fbrnE/XVc_tnXbFGI/AAAAAAAAEII/GL4IC1J9tVs3zujbdGWcEBN7qH1CaDXygCLcBGAs/s1600/engenho-central.jpg"
-                        alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Engenho Central de Pidaré</a>
-                    <span>Patrimônio Histórico | 18 de Setembro 2021</span>
-                    <p>Construído à margem direita do rio Pindaré, em terras pertecentes a extinta colônia de São
-                        Pedro, habitada por índios Guajajaras, é o Engenho Central.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!--3º caixinha -->
-            <div class="box">
-                <div class="imagem">
-                    <img src="https://mapio.net/images-p/4617493.jpg" alt="">
-                </div>
-                <div class="conteudo">
-                    <a href="#" class="title">Centro de Cultura de Caxias</a>
-                    <span>Patrimônio Histórico | 18 de Setembro 2021</span>
-                    <p>O Centro Municipal de Cultura Dr. Henrique Ordovás Filho é um centro cultural mantido pela
-                        Prefeitura de Caxias do Sul,
-                        por meio da Secretaria Municipal da Cultura.</p>
-                    <a href="#" class="sm">Saiba Mais</a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="destaque">
-        <h2 class="secaodestaque-titulo tituloPadrao">
-            DESTAQUE
-        </h2>
-
-        <ul class="listaDeDestaque">
-
-            <li id="new0" class="listaDeDestaque-item">
-                <article class="listaDeDestaque-blog">
-                    <div class="imagem">
-                        <img src="https://cultura.ma.gov.br/wp-content/uploads/2019/05/FOTOS-CHARLLES-EDUARDO-98-987326303-11-BOI-DE-IGUAIBA-M-750x300.jpg"
-                            class="listaDeDestaque-blog-img" alt="Teclado da Apple e um celular Android">
-                    </div>
-                    <h2 class="listaDeDestaque-blog-titulo">
-                        Bumba Meu Boi do Maranhão se torna Patrimônio Cultural da Humanidade
-                    </h2>
-                    <p>
-                        Bumba Meu Boi do Maranhão se torna Patrimônio Cultural da Humanidadetão ganhando
-                        destaque.
-                        <a href="#" class="listaDeDestaque-blog-link">
-                            Continuar lendo o post 1
-                        </a>
-                    </p>
-                </article>
-            </li>
-
-            <li id="new1" class="listaDeDestaque-item">
-                <article class="listaDeDestaque-blog">
-                    <div class="imagem">
-                        <img src="https://cultura.ma.gov.br/wp-content/uploads/2019/10/SMD1-750x300.jpeg"
-                            class="listaDeDestaque-blog-img" alt="Pessoa segurando um celular">
-                    </div>
-                    <h2 class="listaDeDestaque-blog-titulo">
-                        Conheça a história do Teatro Alberto Maranhão </h2>
-                    <p>
-                        Um cenário onde cultura e arte se encontram: esse é o Teatro Alberto Maranhão. Fundado...
-                        <a href="#" class="listaDeDestaque-blog-link">
-                            Continuar lendo o post 2
-                        </a>
-                    </p>
-                </article>
-            </li>
-
-            <li id="new2" class="listaDeDestaque-item">
-                <article class="listaDeDestaque-blog">
-                    <div class="imagem">
-                        <img src="https://cultura.ma.gov.br/wp-content/uploads/2020/07/Palacio-dos-Le%C3%B5es-sele%C3%A7%C3%A3o3-750x300.jpg"
-                            class="listaDeDestaque-blog-img" alt="Pessoas levantando um senhor para ver melhor um show">
-                    </div>
-                    <h2 class="listaDeDestaque-blog-titulo">
-                        programa 'Adote um Casarão' no Maranhão </h2>
-                    <p>
-                        O objetivo da ação é estimular o empreendedorismo local e ocupar os imóveis públicos com...
-                        <a href="#" class="listaDeDestaque-blog-link">
-                            Continuar lendo o post 3
-                        </a>
-                    </p>
-                </article>
-            </li>
-
-        </ul>
-
-        <nav>
-            <ul class="listaDeDestaque-slider">
-                <li>
-                    <a href="#new0" data-sliderItem="0"
-                        class="listaDeDestaque-slider-item listaDeDestaque-slider-item--ativo">
-                        Notícia 1
-                    </a>
-                </li>
-                <li>
-                    <a href="#new1" data-sliderItem="1" class="listaDeDestaque-slider-item">
-                        Notícia 2
-                    </a>
-                </li>
-                <li>
-                    <a href="#new2" data-sliderItem="2" class="listaDeDestaque-slider-item">
-                        Notícia 3
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-
-    <footer>
-        <section class="footer">
-            <p class="copyright">&copy; Copyright Bumba Meu Maranhão - 2021</p>
         </section>
-    </footer>
 
-    <!-- ARQUIVO JS  -->
-    <script src="js/script.js"></script>
+
+        <section class="bumba section container" id="bumba">
+            <h2 class="section__title">
+               Bumba 
+            </h2>
+
+            <div class="bumba__container grid">
+                <div class="bumba__content">
+                    <img src="assets/img/chapeu.svg" alt="" class="bumba__img">
+                    <h3 class="bumba__title">Cultura Maranhense</h3>
+                    <!-- <p class="bumba__description">alguma coisa</p> -->
+                </div>
+
+                <div class="bumba__content">
+                    <img src="assets/img/bandeira.svg" alt="" class="bumba__img">
+                    <h3 class="bumba__title">Festas Populares</h3>
+                    <!-- <p class="bumba__description">alguma coisa</p> -->
+                </div>
+
+                <div class="bumba__content">
+                    <img src="assets/img/cuscuz.svg" alt="" class="bumba__img">
+                    <h3 class="bumba__title">Culinária Maranhense</h3>
+                    <!-- <p class="bumba__description">alguma coisa</p> -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="ma section container" id="sobre">
+            <div class="ma__container grid">
+                <div class="ma__data">
+                    <h2 class="section__title ma__title">
+                        Sobre o Estado do Maranhão
+                    </h2>
+                    <p class="ma__description">
+                        É um estado brasileiro integrante da região Nordeste que apresenta mais de 7 milhões de
+                        habitantes distribuídos em uma superfície de 330 mil km².
+                    </p>
+                    <a href="https://www.ma.gov.br/" class="button">Saiba Mais</a>
+                </div>
+
+                <img src="assets/img/ma.svg" alt="" class="ma__img">
+            </div>
+        </section>
+
+        <section class="galeria_de_fotos" id="galeria">
+            <h2 class="section__title">
+                Galeria de Imagens
+             </h2>
+            <div class="fotos">
+            <img src="assets/img/1.png" >
+            <img src="assets/img/2.png" >
+            <img src="assets/img/3.png" >
+            </div>
+        </section>
+
+   <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo1.svg" alt="" class="footer__logo-img">
+                    <img src="assets/img/logo2.svg" alt="" class="footer__logo-white">
+                </a>
+
+                <p class="footer__description">
+                    &#169 Bumba Meu Maranhão 2022
+                </p>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Bumba</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Cultura</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Populares</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Culinária</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Suporte</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Centro de Apoio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Entre em contato</a>
+                    </li>
+                </ul>
+            </div> 
+
+
+            <div>
+                <h3 class="footer__title">Redes Sociais</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Twitter</a>
+                    </li>
+                </ul>
+            </div> 
+            <!-- <div class="footer__copy">
+                <span> &#169 Bumba Meu Maranhão 2022.</span>
+            </div> -->
+    </footer> 
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <!-- SCROLL REVEAL-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
